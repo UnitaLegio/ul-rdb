@@ -3,7 +3,7 @@ create table users_scopes
 (
     user_id     bigint                not null
         references usr_mng.users,
-    scopes      integer               not null
+    scope_id    integer               not null
         references usr_mng.scopes,
     restricting boolean default false not null
 );
